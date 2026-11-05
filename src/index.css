@@ -1,0 +1,93 @@
+body 
+{
+  background-color: #212121;
+  margin: 0;
+
+}
+h1 {
+font-family: "Segoe UI", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #00b4ff,
+        #ffffff,
+        #00b4ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 25px rgba(0,180,255,0.4);
+}
+
+
+.dashboard-header h1 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #00b4ff,
+        #ffffff,
+        #00b4ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 25px rgba(0,180,255,0.4);
+}
+
+
+.bubble-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px; 
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.metric-card {
+position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(15, 15, 15);
+  transform-style: preserve-3d;
+  animation: rot 2s infinite ease;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 0px, inset 0 0 90px 0px;
+  color: white;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metric-card:hover
+{
+  box-shadow: 0 0 50px 0px, inset 5px 5px 20px 0px black;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateX(-15deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotateX(-15deg) translateY(-10px);
+  }
+
+  100% {
+    transform: rotateX(-15deg) translateY(0px);
+  }
+}
+
